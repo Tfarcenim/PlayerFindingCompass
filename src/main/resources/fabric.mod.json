@@ -1,12 +1,12 @@
 {
   "schemaVersion": 1,
-  "id": "modid",
+  "id": "playerfindingcompass",
   "version": "${version}",
 
-  "name": "Example Mod",
-  "description": "This is an example description! Tell everyone what your mod is about!",
+  "name": "Player Finding Compass",
+  "description": "Adds a compass that finds players",
   "authors": [
-    "Me!"
+    "Tfarcenim"
   ],
   "contact": {
     "homepage": "https://fabricmc.net/",
@@ -19,11 +19,14 @@
   "environment": "*",
   "entrypoints": {
     "main": [
-      "net.fabricmc.example.ExampleMod"
+      "tfar.playerfindingcompass.PlayerFindingCompass"
+    ],
+    "client": [
+      "tfar.playerfindingcompass.PlayerFindingCompass"
     ]
   },
   "mixins": [
-    "modid.mixins.json"
+    "playerfindingcompass.mixins.json"
   ],
 
   "depends": {
